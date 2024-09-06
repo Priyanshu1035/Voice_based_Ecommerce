@@ -1,7 +1,8 @@
 import React from "react";
-import logo from "../assets/logo1.png";
-import { FaLayerGroup } from "react-icons/fa";
-import { HiUserGroup } from "react-icons/hi";
+import walmart_logo from "../assets/walmart_logo.jpeg";
+import walmart_logo2 from "../assets/walmart_logo2.jpeg";
+//import { FaBlind } from "react-icons/fa";
+//import { HiUserGroup } from "react-icons/hi";
 import { GoSearch } from "react-icons/go";
 import { MdLogin, MdLogout } from "react-icons/md";
 import { BiWorld } from "react-icons/bi";
@@ -15,17 +16,14 @@ const Navbar = () => {
         {/* Left */}
         <div className="flex  items-center gap-x-3 shrink-0">
           <div className="hover:bg-[#06529a] p-2 rounded-full">
-            <img src={logo} alt="" className=" h-12" />
+            <img src={walmart_logo2} alt="" className=" h-14 w-18" />
           </div>
 
           <div className="md:flex items-center gap-2 hidden hover:bg-[#06529a] p-3 rounded-full">
-            <FaLayerGroup className="text-[17px]" />
-            <p className="text-[16px] font-semibold">Sections</p>
+            <img src={walmart_logo} alt="" className=" h-8" />
+            <p className="text-[16px] font-semibold">Walmart<br></br>for<br></br>visuallyimpaired</p>
           </div>
-          <div className="md:flex hidden  items-center gap-2 hover:bg-[#06529a] p-3 rounded-full ">
-            <HiUserGroup className="text-[20px]" />
-            <p className="text-[16px] font-semibold">Partners</p>
-          </div>
+
         </div>
         {/* Middle */}
         <div className="hidden relative lg:flex items-center flex-1 mx-6 ">
@@ -39,6 +37,10 @@ const Navbar = () => {
         </div>
         {/* Right */}
         <div className="flex  items-center gap-x-2">
+        <div className="flex items-center gap-2 hover:bg-[#06529a] p-3 rounded-full">
+            <img src={walmart_logo} alt="" className=" h-8" />
+            <p className="text-[16px] font-semibold">Walmart Pharmacy</p>
+          </div>
           <div className="flex items-center gap-2 hover:bg-[#06529a] p-3 rounded-full">
             <MdLogin className="text-[17px] rotate-90" />
             <p className="text-[16px] font-semibold">Register</p>
